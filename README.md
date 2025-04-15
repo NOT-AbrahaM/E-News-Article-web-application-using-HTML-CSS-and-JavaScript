@@ -1,2 +1,2 @@
 # E-News-Article-web-application-using-HTML-CSS-and-JavaScript
-Designed and developed an interactive E-News Article web application using HTML, CSS, and JavaScript
+Designed and developed an interactive E-News Article web application using HTML, CSS, and JavaScript. Created a responsive layout for optimal viewing on all devices. Implemented dynamic content loading, smooth scrolling, and user-friendly navigation. Enhanced user experience with animations, styled components, and interactive elements for seamless article browsing.
