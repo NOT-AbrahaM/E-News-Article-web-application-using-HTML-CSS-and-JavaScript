@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-enqiv="refresh" content="5">
+    <meta name="author" content="Andrew" >
+    <title>E-News Article</title>
+    <link rel="stylesheet" href="Homestyle.css">
+</head>
+<body onload ="f_tion()">
+    <header class="top">
+        <h1>E-News Daily&trade;</h1>
+        <p><b><i>Bringing the Latest News Around the World in Your Fingertips ! </b></i></p>
+        <nav>
+            <ul>
+                <li><b><a href="#world">World</a></b></li>
+                <li><b><a href="#technology">Technology</a></b></li>
+                <li><b><a href="#sports">Sports</a></b></li>
+                <li><b><a href="#stocks">Stocks</a></b></li>
+                <li><b><a href="#politics">Politics</a></b></li>
+                <li><b><a href="#entertainment">Entertainment</a></b></li>
+                <li><b><a href="#travel">Tourism</a></b></li>
+            </ul>
+        </nav>
+
+        <div id="datetime" class="datetime"></div>
+        <div class="search-section">
+            <form id="search-form" method="get">
+                <label for="search-input"></label>
+                <input type="text" id="search-input" name="search" placeholder="Search for news...">
+                <button type="submit">Search</button>
+                <p id="no-results" style="display: none;">No results found.</p>
+            </form>
+        </div>
+    </header>
+    
+    <div class="image-slider">
+        <img src="News1.png">
+        <img src="News2.png" >
+        <img src="News3.png" >
+        <img src="News4.png" >
+        <img src="News5.png" >
+        <img src="News6.png" >
+    </div>
+    
+    <div id="background" class="color">
+        <div class="video-section">
+            <div class="flash-news">
+                <h1>Global News</h1>
+                <iframe src="https://www.youtube.com/embed/4gfM_dbhq7k?si=I5mrw3CPxO6h7Pfv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="news-link"><b>In a dramatic escalation, Iran to attack Israel anytime, intensifying tensions in the Middle East and raising concerns over a potential broader conflict</b></p>
+            </div>
+            <div class="flash-news">
+                <h1>Global News</h1>
+                <iframe src="https://www.youtube.com/embed/kk9pYVjlLkc?si=qvfJddmG8mxxP55O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="news-link"><b>Muhammed Yunus hails the emergence of a second independence movement, marking a historic milestone in national freedom.</b></p>
+            </div>
+        </div>
+        <div class="news-section">
+            <h2 section id="world" class="world-news-heading">World News</h2>
+            <main class="grid-container">
+                <section id = "world1" class="grid-item">
+                    <article>
+                        <h2>Blinken says ceasefire talks ‘maybe last’ chance to free captives from Gaza</h2>
+                        <p><em>By Al Jazeera and news agencies | August 19, 2024</em></p>
+                        <p class ="news-link"><b> Secretary of State Antony Blinken, pushing for a Gaza ceasefire on his visit to Israel, has described ongoing negotiations as “maybe the last” chance to secure the captives’ release and secure a ceasefire.</b></p>
+                    </article>
+                </section>
+                <section id="world2" class="grid-item">
+                    <article>
+                        <h2>Ukraine hits third bridge in Russia’s Kursk, says buffer zone is final goal</h2>
+                        <p><em>By Al Jazeera and news agencies | August 18, 2024</em></p>
+                        <p class="news-link"><b>Moscow says that Ukraine has struck and damaged a third bridge in the Kursk region, as Kyiv forces attempt to expand its incursion within Russian territory.Russia’s Investigative Committee on Monday confirmed the attack on the bridge located along the River Seym, which winds through Kursk.</b></p>
+                    </article>
+                </section>
+                <section id="world3" class="grid-item">
+                    <article>
+                        <h2>Yunus says Bangladesh is experiencing a 'student-led revolution'</h2>
+                        <p><em>By The Times of India | August 12, 2024</em></p>
+                        <p class="news-link"><b>Bangladesh is undergoing a "student-led revolution" following the removal of Premier Sheikh Hasina, according to the country’s new interim leader, Muhammad Yunus. "This is a revolution, a student-led revolution," the Nobel laureate declared at a news briefing on Sunday.</b></p>
+                    </article>
+                </section>
+                <section id="world4" class="grid-item">
+                    <article>
+                        <h2>Indonesia celebrates 79th independence day amidst unfinished future capital</h2>
+                        <p><em>By The Times of India | August 17, 2024</em></p>
+                        <p class="news-link"><b>Indonesia celebrated 79 years of independence with a grand ceremony in its unfinished future capital on Saturday.President Joko Widodo and hundreds of officials gathered for the Independence Day ceremony at the new Presidential Palace, which is designed in the shape of the Garuda, a mythical eagle-winged figure that serves as the protector of Indonesia.</b></p>
+                    </article>
+                </section>
+                <section id="world5" class="grid-item">
+                    <article>
+                        <h2>1 dead, 6 missing after sailboat sinks near Italy's Sicily</h2>
+                        <p><em>By Adnkronos | August 19, 2024</em></p>
+                        <p class="news-link"><b>One person was declared dead and at least six people were reported missing after a 50-meter sailboat capsized and sank near Sicily early Monday, with 22 people on board, including 12 passengers and 10 crew members.</b></p>
+                    </article>
+                </section>
+                <section id="world6" class="grid-item">
+                    <article>
+                        <h2>Japan braces for Typhoon Ampil: Flights and trains cancelled, evacuations ordered​</h2>
+                        <p><em>By The Times of India | August 16, 2024</em></p>
+                        <p class="news-link"><b>Japan is facing severe disruptions as Typhoon Ampil approaches, categorised as "very strong" by the Japan Meteorological Agency. Typhoons, like Ampil, are tropical cyclones in the Western Pacific or Indian Oceans with winds of at least 74 mph, similar to hurricanes in the Atlantic. The typhoon, with winds reaching 216 kph (134 mph), has caused widespread power blackouts and forced the grounding of hundreds of flights</b></p>
+                    </article>
+                </section>
+            </main>
+            <h2 section id="technology" class="tech-news-heading">Tech News</h2>
+                <main class="grid-container">
+                <section id="tech1" class="grid-item">
+                    <article>
+                        <h2>Google Pixel 9 series launched, Instagram starts work on another Snap like feature and more</h2>
+                        <p><em>By Livemint | August 17, 2024</em></p>
+                        <p class="news-link"><b>Google finally unveiled its Pixel 9 range at the company's annual Made by Google event this week. The four new devices: Pixel 9, Pixel 9 Pro, Pixel 9 Pro XL and Pixel 9 Pro Fold have all been released in India and are expected to compete with the Apple and Samsung of the world. </b></p>
+                    </article>
+                </section>
+                <section id="tech2" class="grid-item">
+                    <article>
+                        <h2>Will the iPhone 16 Come With a Higher Price Tag? Here's What We Expect</h2>
+                        <p><em>By CNet | August 18, 2024</em></p>
+                        <p class="news-link"><b>Apple has shared its upcoming Apple Intelligence features arriving on some of its latest devices and also unveiled new capabilities coming with iOS 18 in the fall. As the company's premium-tier devices become even more sophisticated with the help of AI and, potentially, more high-end materials, iPhone fans are wondering whether those advancements will come with a higher sticker price.</b></p>
+                    </article>
+                </section>
+                <section id="tech3" class="grid-item">
+                    <article>
+                        <h2>Elon Musk’s X faces AI deepfake crisis as Grok 2 chatbot fuels concerns</h2>
+                        <p><em>By India TV | August 19, 2024</em></p>
+                        <p class="news-link"><b>Elon Musk's AI chatbot Grok 2, now accessible to X Premium subscribers, is facing significant backlash due to its AI image generation capabilities. What was initially designed as an entertaining feature is now being criticized for creating images that eerily resemble real-life figures.</b></p>
+                    </article>
+                </section>
+                <section id="tech4" class="grid-item">
+                    <article>
+                        <h2>NASSCOM and others representing WhatsApp, Google rejects Airtel, Reliance Jio and Vodafone’s call for regulation</h2>
+                        <p><em>By Times of India | August 19, 2024</em></p>
+                        <p class="news-link"><b>WhatsApp, Google’s RCS and Telegram have reportedly rejected the demand of RelianceJio, Bharti Airtel andVodafoneIdea to bring OTTs under TRAI regulation. The telecom companies have asked the Telecom Regulatory Authority of India(TRAI) to make new rules for OTT (over-the-top) communication apps under the Information Technology Act (2000).</b></p>
+                    </article>
+                </section>
+                <section id="tech5" class="grid-item">
+                    <article>
+                        <h2>India's IT industry is paving the way for its AI future</h2>
+                        <p><em>By Business Standard | August 16, 2024</em></p>
+                        <p class="news-link"><b>AI is transforming the world in unprecedented ways, creating new opportunities for human ingenuity and innovation across industries and societies. As one of the fastest-growing economies in the world, India has huge potential to leverage AI for inclusive development and progress, with the country’s IT and IT-enabled services (ITES) industries playing a central role in this transformation.</b></p>
+                    </article>
+                </section>
+                </main>
+
+                <h2 section id="sports" class="sports-news-heading">Sports News</h2>
+                <main class="grid-container">
+                <section id="sports1" class="grid-item">
+                    <article>
+                        <h2>U.S. leads Olympic medal count in Paris but there's more to the story</h2>
+                        <p><em>By NPR Org | August 9, 2024</em></p>
+                        <p class="news-link"><b> the U.S. is leading overall (at the moment) in both Olympic gold medals and total medals. American athletes, often cheered on by family who've made the trip to Paris, have mostly hit their marks and often outperformed expectations, garnering more than a hundred medals.</b></p>
+                    </article>
+                </section>
+                <section id="sports2" class="grid-item">
+                    <article>
+                        <h2>Vinesh Phogat Gets Gold Medal Upon Return To Village From Paris Olympics 2024</h2>
+                        <p><em>By Sports NDTV | August 19, 2024</em></p>
+                        <p class="news-link"><b>Celebrated wrestler Vinesh Phogat on Saturday received a grand welcome on her return to India from Paris. Hundreds of supporters gathering outside the IGI airport, showing immense solidarity with Vinesh, who was disqualified for being overweight after reaching the 50kg final at the Olympics.</b></p>
+                    </article>
+                </section>
+                <section id="sports3" class="grid-item">
+                    <article>
+                        <h2>Real Madrid vs Atalanta UEFA Super Cup Highlights: Mbappe Shines On Debut As Los Blancos Win 2-0</h2>
+                        <p><em>By Republic News | August 15, 2024</em></p>
+                        <p class="news-link"><b>Real Madrid vs Atalanta live score: And that's that the full time whistle has been blown and Real Madrid have emerged victorious in UEFA Super Cup 2024 as goals from Kylian Mbappe and Fede Valverde hand them the victory. </b></p>
+                    </article>
+                </section>
+                <section id="sports4" class="grid-item">
+                    <article>
+                        <h2>India vs SL, 3rd ODI , Sri Lanka beat India by 110 runs,win series 2-0</h2>
+                        <p><em>By Livemint | August 7, 2024</em></p>
+                        <p class="news-link"><b>Sri Lanka on 7 August created history as they defeated India in a bilateral ODI series after a gap of 27 years, since 1997. Charith Asalanka-led Sri Lanka defeated Rohit Sharma-led India by a whopping 110 runs in the third ODI match at Colombo on Wednesday.</b></p>
+                    </article>
+                </section>
+                <section id="sports5" class="grid-item">
+                    <article>
+                        <h2>Draymond Green raves about LeBron James for living up to 'best ever' hype: "To not be considered a failure"</h2>
+                        <p><em>By SportsKeeda | August 18, 2024</em></p>
+                        <p class="news-link"><b>He was hailed as the next big thing after Michael Jordan, and to James' credit, he has lived up to those expectations. He now has four NBA titles, four league MVPs, 20 All-Star game selections, and recently won his third Olympic gold medal.</b></p>
+                    </article>
+                </section>
+                <section id="sports6" class="grid-item">
+                    <article>
+                        <h2>Neeraj Chopra wins silver medal at Paris 2024 Olympics javelin throw</h2>
+                        <p><em>By Paris Olympics | August 9, 2024</em></p>
+                        <p class="news-link"><b>Arshad Nadeem, who set an Olympic record of 92.97m with this second attempt to pull clear of the rest of the field, held on to secure the Olympic men's javelin throw gold medal. Pakistan's first Olympic medal winner since Barcelona 1992 ended the night with another gigantic 91.79m throw on his final attempt!</b></p>
+                    </article>
+                </section>
+                </main>
+
+                <h2 section id="stocks" class="stocks-news-heading">Stocks News</h2>
+                <main class="grid-container">
+                <section id="stocks1" class="grid-item">
+                    <article>
+                        <h2>Ola Electric stock nearly doubles from IPO price, hits upper circuit today</h2>
+                        <p><em>By Money COntrol | August 19, 2024</em></p>
+                        <p class="news-link"><b>Ola Electric Mobility Ltd share price hit the upper price band on August 19, extending its listing day gains and nearly doubling since market debut.The stock jumped 10 percent to hit the highest trading permissible limit for the day at Rs 146.03 per share on the Bombay Stock Exchange (BSE). At the National Stock Exchange (NSE), shares of the firm advanced nearly 10 percent to hit the upper circuit limit of Rs 146.38 apiece.</b></p>
+                    </article>
+                </section>
+                <section id="stocks2" class="grid-item">
+                    <article>
+                        <h2>Nifty 50, Sensex today: What to expect from Indian stock market in trade on August 19</h2>
+                        <p><em>By Livemint | August 19, 2024</em></p>
+                        <p class="news-link"><b>Indian stock market indices, Sensex and Nifty 50, are likely to open higher on Monday following gains in global markets amid upbeat investor sentiment.
+                            The trends on Gift Nifty also indicate a positive start for the Indian benchmark index. The Gift Nifty was trading around 24,670 level, a premium of nearly 72 points from the Nifty futures’ previous close.
+                            On Friday, the domestic equity indices ended almost 2% higher each, with the Nifty 50 reclaiming the 24,500 mark.</b></p>
+                    </article>
+                </section>
+                <section id="stocks3" class="grid-item">
+                    <article>
+                        <h2>Wall Street today: US stocks flat after consumer sentiment report</h2>
+                        <p><em>By Livemint | August 19, 2024</em></p>
+                        <p class="news-link"><b>US stocks pared losses to trade flat on Friday after a report showed consumer sentiment rose in August.
+
+                            At 11:31 a.m. ET, the Dow Jones Industrial Average fell 4.90 points, or 0.01 per cent, to 40,558.16, the S&P 500 lost 4.03 points, or 0.06 per cent, to 5,539.67 and the Nasdaq Composite lost 22.52 points, or 0.13 per cent, to 17,571.98.
+                            
+                            In the early trading session, the three major indices had fallen after weak housing starts data showed that the real estate market remained depressed in July.</b></p>
+                    </article>
+                </section>
+                <section id="stocks4" class="grid-item">
+                    <article>
+                        <h2>This Chip Stock Will Beat Nvidia in the 2nd Half of the Year</h2>
+                        <p><em>By NASDAQ | August 17, 2024</em></p>
+                        <p class="news-link"><b>There's no question that Nvidia (NASDAQ: NVDA) has been the flagbearer for the AI boom thus far. The stock is still up more than 600% since start of 2023, adding trillions in market value along the way.
+                            However, past performance is not a guarantee of future returns, and the AI rally is starting to broaden as investors look for alternatives to Nvidia. One chip stock that looks like it has a good chance of outperforming Nvidia over the rest of the year is Advanced Micro Devices (NASDAQ: AMD),the fabless chip maker best known for its PC CPUs that is now seeing rapid growth from data center GPUs.</b></p>
+                    </article>
+                </section>
+                <section id="stocks5" class="grid-item">
+                    <article>
+                        <h2>Japan’s stock market rally fades as fear returns</h2>
+                        <p><em>By CNN | August 8, 2024</em></p>
+                        <p class="news-link"><b>
+                            A comeback rally in Japanese stocks has quickly lost steam, as the specter of a US economic slowdown and further yen volatility cast a long shadow across global financial markets.
+                            The Nikkei 225 ended down 0.7% on Thursday, snapping a two-day winning streak. Meanwhile, the yen strengthened 0.6% to 146 against the US dollar, after losing nearly 2% on Tuesday and Wednesday combined.The benchmark Japanese index had soared in the past two sessions after a dramatic rout on Monday, as investors took some solace from the words of central bank officials.</b></p>
+                    </article>
+                </section>
+                <section id="stocks6" class="grid-item">
+                    <article>
+                        <h2> Public Provident Fund to Mutual Funds: Six best investments that can make you rich</h2>
+                        <p><em>By Sangeetha Ojha | April 28, 2024</em></p>
+                        <p class="news-link"><b>Becoming wealthy often requires a combination of financial discipline, smart investing, and patience. Investing in the stock market, either directly or through mutual funds or ETFs, can yield significant returns over time. Real estate, whether through rental properties or REITs, provides rental income and long-term appreciation.</b></p>
+                    </article>
+                </section>
+                </main>
+
+                <h2 section id="politics" class="politics-news-heading">Politics News</h2>
+                <main class="grid-container">
+                <section id="politics1" class= "grid-item">
+                    <article>
+                        <h2>Thailand’s Paetongtarn Shinawatra sworn in as PM after royal sign-off</h2>
+                        <p><em>By Al Jazeera | August 18, 2024</em></p>
+                        <p class="news-link"><b>Thailand’s king has endorsed Paetongtarn Shinawatra as the country’s new prime minister two days after parliament elected her.Paetongtarn, 37, was sworn in on Sunday, becoming the youngest prime minister of Thailand.</b></p>
+                    </article>
+                </section>
+                <section id="politics2" class="grid-item">
+                    <article>
+                        <h2>Speculation Rife That Ghulam Nabi Azad May Re-join Congress; He Says Claims ‘Totally Baseless’</h2>
+                        <p><em>By The Wire Staff | August 18, 2024</em></p>
+                        <p class="news-link"><b>With assembly elections in Jammu and Kashmir barely weeks away, speculation is rife that Ghulam Nabi Azad, who floated his own political outfit following the reading down of Article 370 in 2019, is set to re-join the Congress party.
+
+                            Azad’s party has, however, blamed “Congress leaders” for spreading the rumours, dubbing them as “totally baseless” and an “attempt to break our party”</b></p>
+                    </article>
+                </section>
+                <section id="politics3" class="grid-item">
+                    <article>
+                        <h2>Gender gap, enthusiasm, economy make for tight Harris-Trump race on Democratic convention eve</h2>
+                        <p><em>By Anthony Salvanto | August 18, 2024</em></p>
+                        <p class="news-link"><b>When Kamala Harris became the Democratic presidential nominee, the party saw a major surge in enthusiasm from its voters. It pulled the party into an effectively even race with Donald Trump and Republicans, and it has continued to motivate Democrats to vote today.
+
+                            She and Trump are even across the battleground states that will decide the Electoral College, and now Harris has a 3-point edge nationally.
+                            
+                            The late-changing campaign has also opened an historic dynamic, a race within the race to define both Harris and the key issues.</b></p>
+                    </article>
+                </section>
+                <section id="politics4" class="grid-item">
+                    <article>
+                        <h2>Malaysian PM to meet Modi, issue of Zakir Naik still unresolved</h2>
+                        <p><em>By Suhasini Haidar | August 19, 2024</em></p>
+                        <p class="news-link"><b>Malaysian Prime Minister Anwar Ibrahim will land in Delhi on Monday (August 18, 2024) on a three-day visit, where he and Prime Minister Narendra Modi will sign a number of agreements and chart out a “multi-sectoral cooperation agenda” to enhance trade, strategic ties, and people to people links, the Ministry of External Affairs (MEA) announced.</b></p>
+                    </article>
+                </section>
+                <section id="politics5" class="grid-item">
+                    <article>
+                        <h2>Why is Japan’s Prime Minister Fumio Kishida resigning?</h2>
+                        <p><em>By Andrew | August 16, 2024</em></p>
+                        <p class="news-link"><b>Japan’s Prime Minister Fumio Kishida announced on Wednesday (August 14) that he will be stepping down from the post next month, and will not contest in the upcoming vote to elect a new chief for the ruling Liberal Democratic Party (LDP).
+
+                            Kishida has been having a torrid time in office, his government has been battered by scandals, and his 20% approval rating indicates a disastrous erosion of public trust.</b></p>
+                    </article>
+                </section>
+                </main>
+
+                <h2 section id="entertainment" class="entertainment-news-heading">Entertainment News</h2>
+                <main class="grid-container">
+                <section id="enter1" class="grid-item">
+                    <article>
+                        <h2>'The Prodigy' offers thrills despite predictable turns | The Haunted Column...</h2>
+                        <p><em>By Swati P Ajith | August 18, 2024</em></p>
+                        <p class="news-link"><b>Horror fans are no strangers to the terrifying trope of possessed children or haunted objects—think of the Chucky films, where a sinister doll is inhabited by a deranged killer. The Prodigy, directed by Nicholas McCarthy, taps into this familiar theme but with a fresh twist. Jackson Robert Scott's chilling performance elevates the film's eerie atmosphere, making it an unsettling experience.</b></p>
+                    </article>
+                </section>
+                <section id="enter2" class="grid-item">
+                    <article>
+                        <h2>‘It Ends With Us’: The Press Tour Drama, Explained</h2>
+                        <p><em>By Shivani Gonzalez | August 16, 2024</em></p>
+                        <p class="news-link"><b>The Blake Lively romantic drama “It Ends With Us” revolves around a florist, and the film’s marketing campaign, including the red carpet and the posters, has been entirely floral-themed. But the press tour has hardly come up roses.
+                            The movie itself is a box office hit, earning $50 million after its release last weekend. The plot centers on Lily Bloom (Lively), who escapes a rough childhood, opens her dream flower store and soon meets her seemingly dream guy, Ryle Kincaid, played by the film’s director, Justin Baldoni.</b></p>
+                    </article>
+                </section>
+                <section id="enter3" class="grid-item">
+                    <article>
+                        <h2>‘Deadpool & Wolverine’ Overtakes ‘Joker’ as Highest-Grossing R-Rated Film in History With $1.08 Billion Globally</h2>
+                        <p><em>By Rebecca Rubin | August 15, 2024</em></p>
+                        <p class="news-link"><b>Deadpool is living up to his self-appointed moniker as Marvel Jesus.
+                            Disney’s comic book sequel “Deadpool & Wolverine” has generated $1.086 billion at the global box office after 23 days of release, overtaking 2019’s “Joker” ($1.078 billion) as the highest grossing R-rated movie in history.
+                            Marvel’s save-the-universe adventure landed in theaters on July 26, collecting a mighty $211 million in its domestic debut to rank as the sixth-biggest opening weekend of all time.</b></p>
+                    </article>
+                </section>
+                <section id="enter4" class="grid-item">
+                    <article>
+                        <h2>National Awards: Malayalam movie 'Aattam: The Play' is best feature film , KGF Best Film</h2>
+                        <p><em>By Press Trust of India | August 17, 2024</em></p>
+                        <p class="news-link"><b>Malayalam film "Aattam: The Play" won the award for best feature film and Sooraj R Barjatya was judged best director for the Hindi movie "Uunchai" in the National Film Awards announced on Friday.
+                            The best actress award was shared by Nithya Menon, who got it for the Tamil film 'Thiruchitrambalam', and Manasi Parekh for the Gujarati movie "Kutch Express". The award for best actor went to Rishabh Shetty for the Kannada hit "Kantara".</b></p>
+                    </article>
+                </section>
+                <section id="enter5" class="grid-item">
+                    <article>
+                        <h2>New anime announced: Witch Watch slated for 2025 premiere</h2>
+                        <p><em>By HT News Desk | August 18, 2024</em></p>
+                        <p class="news-link"><b>The Witch Watch TV adaptation is officially going to make our screens sparkle with anime magic next year. In the works at Bilbury Animation Studio, the series is based on Kenta Shinohara's Weekly Shonen Jump manga. The comedy series is set to star some familiar voice actors, with Rina Kawaguchi of Kizuna no Allele taking the lead as Nico Wakatsuki. </b></p>
+                    </article>
+                </section>
+
+                <section id="enter6" class="grid-item">
+                    <article>
+                        <h2>Model gets too flirty with Sidharth Malhotra, fans guess Kiara Advani's reaction: ‘If I were his wife I would…’</h2>
+                        <p><em>By Sanya | August 10, 2024</em></p>
+                        <p class="news-link"><b>On Friday, Sidharth Malhotra graced the runway for designers Shantnu and Nikhil at their fashion show in Delhi. On the glitzy evening that celebrated nostalgia and glamour, the actor stole the show as he strutted down the runway in a striking velvet blazer; he also surprised the audience with an impromptu dance on stage. However, a video of a model getting too close to Sidharth during their ramp walk is grabbing attention on social media.</b></p>
+                    </article>
+                </section>
+                </main>
+
+                <h2 section id="travel" class="travel-news-heading">Tourism News</h2>
+                <main class="grid-container">
+                <section id="travel1" class="grid-item">
+                    <article>
+                        <h2>North Korea to reopen borders for tourists after 5 years</h2>
+                        <p><em>By Megan White | August 16, 2024</em></p>
+                        <p class="news-link"><b>North Korea plans to restart international tourism in Samjiyon from December 2024 after a long COVID-19 shutdown. Tour companies will extend services to other regions of the country after a period of reduced international tourism due to the pandemic, which has kept North Korea largely closed to foreign visitors since early 2020.</b></p>
+                    </article>
+                </section>
+                <section id="travel2" class="grid-item">
+                    <article>
+                        <h2>New Alamein City in Egypt’s North Coast Positioned as Global Sustainable Tourism Hub, Attracting International Investment and Tourists</h2>
+                        <p><em>By Tourism News | August 19, 2024</em></p>
+                        <p class="news-link"><b>Egypt’s North Coast, with the development of New Alamein City, is emerging as a significant player in the global sustainable tourism landscape. This potential transformation was highlighted by Mohamed Kaoud, the former head of the Tourism and Aviation Committee at the Egyptian Junior Business Association.</b></p>
+                    </article>
+                </section>
+                <section id="travel3" class="grid-item">
+                    <article>
+                        <h2>Indonesia’s First International B2B Tourism Event to Debut in Jakarta with the ‘Wonderful Indonesia Tourism Fair’ this October</h2>
+                        <p><em>By Tourism TV | August 17, 2024</em></p>
+                        <p class="news-link"><b>Indonesia is preparing to host its inaugural international B2B tourism event, the Wonderful Indonesia Tourism Fair (WITF), from 2-4 October 2024 in Jakarta. Positioned to become an annual highlight in the global tourism calendar, WITF 2024 will take place at the Swissotel Jakarta PIK Avenue, strategically chosen for its prime location in Pantai Indah Kapuk (PIK), a rapidly emerging tourist hotspot known as the “new Jakarta city.”</b></p>
+                    </article>
+                </section>
+                <section id="travel4" class="grid-item">
+                    <article>
+                        <h2>Japan Travel Remains In Turmoil As A New Typhoon Strands More Passengers, Disrupting Flight Operations For Japan Airlines And All Nippon Airway</h2>
+                        <p><em>By Tourism TV | August 19, 2024</em></p>
+                        <p class="news-link"><b>Typhoon Ampil, a powerful storm that recently swept through Tokyo, Japan, has left thousands of passengers stranded and facing significant travel disruptions. Despite the typhoon’s movement away from Japan’s east coast, the aftermath continues to affect transportation, with ongoing delays and cancellations across various modes of travel, including airlines and bullet trains. </b></p>
+                    </article>
+                </section>
+                <section id="travel5" class="grid-item">
+                    <article>
+                        <h2>Delve into the culinary delights of India: Top 6 cities every foodie must explore</h2>
+                        <p><em>By Team Indulge | August 13, 2024</em></p>
+                        <p class="news-link"><b>As the popular saying goes, “Nothing brings people together like good food.” A country like India which is known as the ‘Land of Diversity’ has no scarcity of delicacies to magnetise the people around. Here are the top 10 Indian cities that no foodie can afford to miss. Let us quickly jump into the article before the hungry readers turn hangry!</b></p>
+                    </article>
+                </section>
+                <section id="travel6" class="grid-item">
+                    <article>
+                        <h2>New Airline Routes Announced Across Singapore, Malaysia, India, and the Philippines on August 14, 2024, Set to Boost Connectivity and Tourism</h2>
+                        <p><em>By Jane Doe | August 14, 2024</em></p>
+                        <p class="news-link"><b>The latest airline route updates from AirAsia, Air India Express, LOT Polish Airlines, Cebu Pacific, and Delta Air Lines highlight significant changes in networks, including new route launches, schedule adjustments, codeshare agreements, and interline partnerships. These developments reflect the dynamic nature of the aviation industry, as these airlines continuously adapt to market demands, optimize their operations, and expand their reach through strategic collaborations.</b></p>
+                    </article>
+                </section>
+                </main>
+                <div id="no-results" style="display: none;">No results found</div>
+        </div>
+    </body>
+
+    <footer>
+        <p>&copy; 2024 E-News Daily. All rights reserved by Andrew Abraham .P </p>
+        <button id="play-button">Play Audio</button>
+        <audio id="audio" controls>
+            <source src="C:\Users\Andrew Abraham\Downloads\winning-mind-165462.mp3" type="audio/mpeg">
+        </audio>
+        <ruby>
+            漢字<rt>かんじ</rt>
+          </ruby>
+    </footer>
+
+    <script>
+
+function f_tion(){
+    alert("Thank you for Using E-News Article");
+}
+
+function updateDateTime() {
+    var now = new Date();
+    var dateOptions = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    };
+    var timeOptions = {
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        hour12: true
+    };
+    
+    var date = now.toLocaleDateString('en-US', dateOptions);
+    var time = now.toLocaleTimeString('en-US', timeOptions);
+    
+    var datetime = date + ' ' + time;
+    document.getElementById("datetime").innerHTML = datetime;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+    document.querySelectorAll('.news-link').forEach(function(element, index) {
+        element.addEventListener('click', function() {
+            if (index === 0) {
+                window.location.href = 'https://timesofindia.indiatimes.com/world/middle-east/israel-iran-war-live-hezbollah-launches-drone-attack-on-northern-israel-benjamin-netanyahu-ismail-haniyeh-latest-updates/liveblog/112327630.cms';
+            } else if (index === 1) {
+                window.location.href = 'https://timesofindia.indiatimes.com/world/south-asia/bangladeshs-second-independence-muhammad-yunus-promises-citizen-safety-in-new-govt/articleshow/112373361.cms';
+            } else if (index === 2){
+                window.location.href= 'https://www.aljazeera.com/news/2024/8/19/blinken-says-current-talks-may-be-last-push-to-end-israels-war-on-gaza';
+            } else if (index ===3){
+                window.location.href='https://www.aljazeera.com/news/2024/8/19/ukraine-hits-second-key-bridge-as-continues-incursion-into-russias-kursk'
+            }else if (index ===4){
+                window.location.href='https://timesofindia.indiatimes.com/world/south-asia/bangladesh-protests-live-updates-sheikh-hasina-quota-reform-movement-muhammad-yunus-chief-justice-obaidul-hassan-hindu-protest/liveblog/112432593.cms'
+            }else if (index ===5){
+                window.location.href='https://timesofindia.indiatimes.com/world/south-asia/indonesia-celebrates-79th-independence-day-amidst-unfinished-future-capital-ceremony-highlights/photostory/112595193.cms?picid=112595242'
+            } else if (index ===6){
+                window.location.href='https://timesofindia.indiatimes.com/world/europe/7-people-missing-after-tourist-sailboat-sinks-in-storm-off-sicily/articleshow/112625153.cms'
+            } else if (index ===7){
+                window.location.href='https://timesofindia.indiatimes.com/world/rest-of-world/japan-braces-for-typhoon-ampil-flights-and-trains-cancelled-evacuations-ordered/photostory/112564886.cms?picid=112565234'
+            } else if (index ===8){
+                window.location.href='https://www.livemint.com/technology/tech-news/weekly-tech-recap-google-pixel-9-series-launched-instagram-starts-work-on-another-snap-like-feature-apple-iphone-se-11723887889981.html'
+            } else if (index ===9){
+                window.location.href='https://www.cnet.com/tech/mobile/will-the-iphone-16-come-with-a-higher-price-tag-heres-what-we-expect/'
+            } else if (index ===10){
+                window.location.href='https://www.indiatvnews.com/technology/news/elon-musk-s-x-faces-ai-deepfake-crisis-as-grok-2-chatbot-fuels-concerns-2024-08-19-947618'
+            } else if (index ===11){
+                window.location.href='https://timesofindia.indiatimes.com/technology/tech-news/nasscom-and-others-representing-whatsapp-google-rejects-airtel-reliance-jio-and-vodafones-call-for-regulation/articleshow/112625920.cms'
+            } else if (index ===12){
+                window.location.href='https://www.business-standard.com/technology/tech-news/india-s-it-industry-is-paving-the-way-for-its-ai-future-124081601556_1.html'
+            } else if (index ===13){
+                window.location.href='https://www.npr.org/2024/08/09/nx-s1-5068021/olympic-medal-count-paris-gold-silver-bronze-total'
+            } else if (index ===14){
+                window.location.href='https://sports.ndtv.com/olympics-2024/vinesh-phogat-gets-gold-medal-on-return-to-village-from-paris-olympics-2024-6365229'
+            } else if (index ===15){
+                window.location.href='https://www.republicworld.com/sports/football/real-madrid-vs-atalanta-live-score-updates-rma-vs-ata-uefa-super-cup-match-today-kylian-mbappe-warsaw#google_vignette'
+            } else if (index ===16){
+                window.location.href='https://www.livemint.com/sports/cricket-news/india-vs-sri-lanka-live-score-updates-match-today-3rd-odi-latest-scorecard-ind-vs-sl-7-aug-2024-rohit-kohli-nissanka-11723004891962.html'
+            } else if (index ===17){
+                window.location.href='https://www.sportskeeda.com/basketball/news-draymond-green-raves-lebron-james-living-best-ever-hype-to-considered-a-failure'
+            } else if (index ===18){
+                window.location.href='https://olympics.com/en/news/neeraj-chopra-paris-2024-olympics-javelin-throw-final-live-india-update-results'
+            } else if (index ===19){
+                window.location.href='https://www.moneycontrol.com/news/business/markets/ola-electric-shares-nearly-double-from-ipo-price-hit-upper-circut-today-12800412.html'
+            } else if (index ===20){
+                window.location.href='https://www.livemint.com/market/stock-market-news/nifty-50-sensex-today-what-to-expect-from-indian-stock-market-in-trade-on-august-19-11724031891200.html'
+            } else if (index ===21){
+                window.location.href='https://www.livemint.com/market/stock-market-news/wall-street-today-us-stocks-fall-after-weak-housing-starts-data-11723815286626.html'
+            } else if (index ===22){
+                window.location.href='https://www.nasdaq.com/articles/prediction-chip-stock-will-beat-nvidia-2nd-half-year'
+            } else if (index ===23){
+                window.location.href='https://edition.cnn.com/2024/08/08/investing/japan-nikkei-stock-market-fears-return-intl-hnk/index.html'
+            } else if (index ===24){
+                window.location.href='https://www.livemint.com/money/personal-finance/mutual-fund-stock-market-to-ppf-top-five-investments-that-can-make-you-rich-national-financial-awareness-day-11714031691253.html'
+            } else if (index ===25){
+                window.location.href='https://www.aljazeera.com/news/2024/8/18/thailands-paetongtarn-shinawatra-sworn-in-as-pm-after-royal-sign-off'
+            } else if (index ===26){
+                window.location.href='https://thewire.in/politics/rumours-ghulam-nabi-azad-set-rejoin-congress'
+            } else if (index ===27){
+                window.location.href='https://www.cbsnews.com/news/new-poll-kamala-harris-policies-trump-democratic-convention-2024/'
+            } else if (index ===28){
+                window.location.href='https://www.thehindu.com/news/national/malaysian-pm-to-meet-modi-issue-of-zakir-naik-still-unresolved/article68540110.ece'
+            } else if (index ===29){
+                window.location.href='https://indianexpress.com/article/explained/explained-global/explained-japan-pm-fumio-kishida-resigns-9516199/'
+            } else if (index ===30){
+                window.location.href='https://www.onmanorama.com/entertainment/entertainment-news/2024/08/18/the-prodigy-the-haunted-column-horror-movie-nicholas-mccarthy.html'
+            } else if (index ===31){
+                window.location.href='https://www.nytimes.com/2024/08/16/movies/it-ends-with-us-controversy-blake-lively-justin-baldoni.html'
+            } else if (index ===32){
+                window.location.href='https://variety.com/2024/film/box-office/deadpool-wolverine-highest-grossing-r-rated-film-history-joker-1236103888/'
+            } else if (index ===33){
+                window.location.href='https://www.business-standard.com/entertainment/national-awards-malayalam-movie-aattam-the-play-is-best-feature-film-124081600994_1.html'
+            } else if (index ===34){
+                window.location.href='https://www.hindustantimes.com/entertainment/anime/new-anime-announced-witch-watch-slated-for-2025-premiere-watch-trailer-101723998145428.html'
+            } else if (index ===35){
+                window.location.href='https://www.hindustantimes.com/entertainment/bollywood/model-gets-too-flirty-with-sidharth-malhotra-kiara-advani-reaction-bhabhi-101723264297303.html?utm_source=taboola_widget&utm_medium=taboola_widget&utm_campaign=article_detail_page'
+            } else if (index ===36){
+                window.location.href='https://economictimes.indiatimes.com/nri/visit/north-korea-to-reopen-borders-for-tourists-after-5-years/articleshow/112563161.cms'
+            } else if (index ===37){
+                window.location.href='https://www.travelandtourworld.com/news/article/new-alamein-city-in-egypts-north-coast-positioned-as-global-sustainable-tourism-hub-attracting-international-investment-and-tourists/'
+            } else if (index ===38){
+                window.location.href='https://www.travelandtourworld.com/news/article/indonesias-first-international-b2b-tourism-event-to-debut-in-jakarta-with-the-wonderful-indonesia-tourism-fair-this-october/'
+            }  else if (index ===39){
+                window.location.href='https://www.travelandtourworld.com/news/article/japan-travel-remains-in-turmoil-as-a-new-typhoon-strands-more-passengers-disrupting-flight-operations-for-japan-airlines-and-all-nippon-airway/'
+            }  else if (index ===40){
+                window.location.href='https://www.indulgexpress.com/food/trends/2024/Jun/18/delve-into-the-culinary-delights-of-india-top-6-cities-every-foodie-must-explore'
+            }  else if (index ===41){
+                window.location.href='https://www.travelandtourworld.com/news/article/new-airline-routes-announced-across-singapore-malaysia-india-and-the-philippines-on-august-14-2024-set-to-boost-connectivity-and-tourism/'
+            }
+        });
+    });
+
+    document.getElementById('play-button').addEventListener('click', function() {
+            var audio = document.getElementById('audio');
+            audio.play();
+        });
+
+        function handleSearch(event) {
+    event.preventDefault();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const searchForm = document.querySelector('#search-form');
+    const searchInput = document.querySelector('#search-input');
+    const newsArticles = document.querySelectorAll('.grid-item article');
+    const noResults = document.querySelector('#no-results');
+
+    if (searchForm) {
+        searchForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const searchTerm = searchInput.value.toLowerCase();
+            let found = false;
+
+            newsArticles.forEach((article) => {
+                const articleText = article.textContent.toLowerCase();
+                if (articleText.includes(searchTerm)) {
+                    article.style.display = 'block';
+                    found = true;
+                } else {
+                    article.style.display = 'none';
+                }
+            });
+            const noResults = document.getElementById('no-results');
+            noResults.style.display = found ? 'none' : 'block';
+        });
+    } else {
+        console.error('Search form element not found.');
+    }
+});
+
+
+
+</script>
+</body>
+</html>
